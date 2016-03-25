@@ -1,0 +1,5 @@
+rootProject.name = 'projectmesh'
+include 'mesh-repository'
+include 'mesh-api'
+include 'mesh-service'
+
