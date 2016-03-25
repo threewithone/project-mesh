@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     compile project(':mesh-repository')
+    compile project(':mesh-service')
 
     compile 'org.springframework:spring-webmvc:4.2.5.RELEASE'
     compile 'javax.servlet:javax.servlet-api:3.1.0'
