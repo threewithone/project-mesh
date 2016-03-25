@@ -1,10 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
 <head>
-    <meta charset="UTF-8">
-    <title>Main Page</title>
+
+	<meta charset="utf-8">
+
+	<title>diJunkBox</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	
+	<script src="libs/modernizr/modernizr.js"></script>
+
 </head>
+
 <body>
 
+	<div class="wrapper">
+		<header>
+			<div class="container">
+				<div class="row top-strip">
+					<div class="col-md-6 logo-strip">
+						<a href="#">
+							<img src="img/logo.png" class="logo-img" alt="">
+							<h2 class = "logo-name">diJunkBox</h2>
+						</a>
+					</div>
+					<div class="col-md-6 auth-strip">
+						<button class ="sign-in-btn btn">Sign in</button>
+					</div>
+				</div>
+			</div>	
+		</header>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 status-player-song">
+					<span class= "current-song">Current song is:    </span>
+					<a href="#" class="next-song">Кровосток - Родина</a>
+					<button class ="add-btn btn" id="addSongBtn">Add song</button>				
+				</div>
+				<div class="col-md-12 add-song hidden" id="addSongBlock">
+						<div class="search-input">
+							<input type="text" class="input-song-name"/>
+							<button class="btn">OK</button>
+						</div>	
+						<div class="col-md-12 song-box">
+							<a href="#"><p class="song">TNMK - Green </p> </a>
+
+						</div>
+						<!-- <div class="col-md-12 add-song-dots"><div class="circle"></div><div class="circle"></div><div class="circle"></div></div>	 -->
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="next-in-line">Next in line: </p>
+				</div>
+				<div class="col-md-12 song-box">
+					<div class="circle"></div>
+					<p class="song">TNMK - Green </p><span class="song-duration">3:10</span>
+				</div>
+				<div class="col-md-12 song-box">
+					<div class="circle"></div>
+					<p class="song">Bones - Sad dao </p><span class="song-duration">3:10</span>
+				</div>
+				<div class="col-md-12 song-box">
+					<div class="circle"></div>
+					<p class="song">BRB - Not tored </p><span class="song-duration">3:10</span>
+				</div>
+				<div class="col-md-12 song-box">
+					<div class="circle"></div>
+					<p class="song">DeadF - Murk </p><span class="song-duration">3:10</span>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+	<div class="hidden"></div>
+	
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	
+	<script src="js/common.js"></script>
+	
 </body>
 </html>
